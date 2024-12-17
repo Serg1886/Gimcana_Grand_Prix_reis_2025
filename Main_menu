@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note_1_TESTING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">GRAND PRIX DE REIS</h1>
+    </header>
+    <main>
+        <p id="texto_0">Es troba al menú d'inici de la gimcana de reis. 
+        <p id="texto_1"> Premi el botó de jugar per començar.</p>
+        <button id="Playbutton" onclick="executeActions()">Jugar!</button>
+        <!-- Agregar botón para reproducir música -->
+        <audio id="myAudio">
+            <source src="./Grand_prix.mp3" type="audio/mpeg">
+            <source src="./Grand_prix.mp3" type="audio/odd">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <img id="image" src="GrandPrix.webp" alt="Imageaftermusic" style="display: none; width: 300px; height: auto;">
+        <div id="additionalText" style="display: none;">
+            <h2> NORMES</h2>
+            <ol type = "1"> 
+            <li>Si us plau, llegeix i segueix amb cura tot el que he s'especifica i es mostra en aquest joc (pensa que el desenvolupament d'aquesta web m'ha dedicat forces hores).</li>
+            <li>No silencis el mòbil, la música que he posat a cada prova donarà ritme, gràcia i gresca al joc.</li>
+            <li>Durant el transcurs de la gimcana t'hauràs de moure per casa. Si us plau, no vagis com un boig. Tingues cura de l'espai on estiguis i evita desendreçar o malbaratar quelcom trobis al teu pas. Després d'acabar on estiguis, deixa tot com l'has trobat. </li>
+            <li>No saltis passos al joc. Si buscant una pista es donés el cas que trobessis una altre que fos posterior, no l'agafis. Si us plau, segueix l'ordre.</li>
+            <li>Completa cada tasca abans de passar a la següent pista. </li>
+            <li>I sobretot, gaudeix del joc :) </li>
+            </ol>
+
+            <h3>INSTRUCCIONS </h3>
+            <ul>
+            <li>El funcionament del joc es tracta com el d'una gimcana. Aquesta serà feta amb el mòbil i hauràs de seguir les 13 pistes que trobaràs arreu de la casa en un codi QR.</li>
+            <li>Durant el transcurs de la prova, les pistes van explicant una història i un successos inventats. A més, algunes seràn proves simples que hauràs de superar.</li>
+            <li>Aquestes pistes t'aniràn portant a diferents punts de la casa i t'aproparan cada cop al teu regal final.</li>
+            <li>Estigues atent a les pistes! Aquestest et donen informació en dos sentits: una, la que necessitaràs per trobar el teu regal; i dos, la que subtilment t'anirà definint de què es tracta el teu regal.</li>
+            <li>El regal final el trobaràs quan es completin totes les pistes i arribis al punt final.</li>
+            <li>Ah! Vigila! s'ha escapat un "pavo" per la casa. Aquest t'allunyarà del teu regal i et treurà punts. Evita trobar-te'l.</li>
+            <li>Per començar a jugar, <em>Islàndia</em> has de rememorar. Allà, en un rectangle <em>el color es va capturar</em> i el temps es va aturar.</li>
+                
+            </ul>
+        </div>
+        </main>
+    <footer>
+        <p>© 2024 By Sergi Solís</p>
+    </footer>
+    <script>
+        // Función para reproducir el audio
+        //function playAudio() {
+            //var audio = document.getElementById("myAudio");
+            //var button = document.getElementById("playButton");
+            //var image = document.getElementById("image");
+            //audio.play();  // Inicia la reproducción del audio
+            //button.style.display = "none";  // Oculta el botón
+            //image.style.display = "block";  // Muestra la imagen
+        //}
+        function executeActions() {
+            // Cambiar el contenido del header
+            document.getElementById("titulo").textContent = "Instruccions";
+           
+            // Cambiar el texto en el main
+            document.getElementById("texto_0").textContent = "Benvingut! Acabes de començar la gimcana de reis amb l'objectiu de aconseguir el teu regal. Si us plau, llegeix atentament les següents normes i instruccions.";
+            
+            // Cambiar el texto en el main
+            document.getElementById("texto_1").textContent = " ";
+    
+            // Mostrar la imagen
+            const imagen = document.getElementById("image");
+            imagen.style.display = "block";
+
+            // Reproducir la música
+            const audio = document.getElementById("myAudio");
+            audio.play();
+
+            // Ocultar el botón
+            document.getElementById("Playbutton").style.display = "none";
+
+            // Mostrar el texto adicional
+            const additionalText = document.getElementById("additionalText");
+            additionalText.style.display = "block";
+        }
+    </script>
+</body>
+</html>
