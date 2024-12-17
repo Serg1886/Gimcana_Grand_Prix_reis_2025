@@ -20,7 +20,7 @@
             <source src="./Grand_prix.mp3" type="audio/odd">
             Tu navegador no soporta la reproducción de audio.
         </audio>
-        <img id="image" src="Turkey_error.webp" alt="Imageaftermusic" style="display: none; width: 300px; height: auto;">
+        <img id="image" src="Turkey.webp" alt="Imageaftermusic" style="display: none; width: 300px; height: auto;">
         </main>
     <footer>
         <p>© 2024 By Sergi Solís</p>
@@ -38,6 +38,10 @@
         function executeActions() {
             // Cambiar el contenido del header
             document.getElementById("titulo").textContent = "OOOOOOOOOoooooooooohhh !!!!!!";
+
+            // Mostrar la imagen
+            const imagen = document.getElementById("image");
+            imagen.style.display = "block";
            
             // Cambiar el texto en el main
             document.getElementById("texto_0").textContent = "Has sigut atrapat pel 'pavo'. Tens -10 punts.";
@@ -45,10 +49,6 @@
             // Cambiar el texto en el main
             document.getElementById("texto_1").textContent = " ";
     
-            // Mostrar la imagen
-            const imagen = document.getElementById("image");
-            imagen.style.display = "block";
-
             // Reproducir la música
             const audio = document.getElementById("myAudio");
             audio.play();
