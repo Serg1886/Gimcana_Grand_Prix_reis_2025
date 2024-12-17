@@ -77,10 +77,13 @@ img {
 
 footer {
     background-color: #47405f;
-    color: white;
     padding: 8px;
     position: fixed;
     bottom: 0;
     width: 100%;
     font-size: 0.8em; /* Tamaño más pequeño */
+}
+
+footer p {
+    color: white;
 }
