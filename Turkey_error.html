@@ -8,9 +8,11 @@
 </head>
 <body>
     <header>
-        <h1 id="titulo">OOOOOOOooooohhhh !!!!!</h1>
+        <h1 id="titulo">Prem per desblocar la pista</h1>
     </header>
     <main>
+        <p id="texto_0"> 
+        <p id="texto_1"> </p>
         <button id="Playbutton" onclick="executeActions()">Pista</button>
         <!-- Agregar botón para reproducir música -->
         <audio id="myAudio">
@@ -18,11 +20,7 @@
             <source src="./Grand_prix.mp3" type="audio/odd">
             Tu navegador no soporta la reproducción de audio.
         </audio>
-        <img id="image" src="Turkey.webp" alt="Imageaftermusic" style="display: none; width: 300px; height: auto;">
-        <div id="additionalText" style="display: none;">
-            <h2> VAJA!!!!!</h2>
-            <p> T'acabes de trobar amb el "pavo". Tens 10 punts menys :( </p>
-        </div>
+        <img id="image" src="Turkey_error.webp" alt="Imageaftermusic" style="display: none; width: 300px; height: auto;">
         </main>
     <footer>
         <p>© 2024 By Sergi Solís</p>
@@ -37,6 +35,31 @@
             //button.style.display = "none";  // Oculta el botón
             //image.style.display = "block";  // Muestra la imagen
         //}
+        function executeActions() {
+            // Cambiar el contenido del header
+            document.getElementById("titulo").textContent = "OOOOOOOOOoooooooooohhh !!!!!!";
+           
+            // Cambiar el texto en el main
+            document.getElementById("texto_0").textContent = "Has sigut atrapat pel 'pavo'. Tens -10 punts.";
+            
+            // Cambiar el texto en el main
+            document.getElementById("texto_1").textContent = " ";
+    
+            // Mostrar la imagen
+            const imagen = document.getElementById("image");
+            imagen.style.display = "block";
+
+            // Reproducir la música
+            const audio = document.getElementById("myAudio");
+            audio.play();
+
+            // Ocultar el botón
+            document.getElementById("Playbutton").style.display = "none";
+
+            // Mostrar el texto adicional
+            const additionalText = document.getElementById("additionalText");
+            additionalText.style.display = "block";
+        }
     </script>
 </body>
 </html>
