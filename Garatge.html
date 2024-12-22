@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despatx 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Prem per desblocar la pista</h1>
+    </header>
+    <main>
+        <p id="texto_0"> 
+        <p id="texto_1"> </p></p></p>
+        <button id="Playbutton" onclick="executeActions()">Pista</button>
+        <!-- Agregar botón para reproducir música -->
+        <audio id="myAudio">
+            <source src="./GTA San Andreas Theme Song.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <img id="image" src="9el0vs.png" alt="Imageaftermusic" style="display: none; width: 500px; height: auto;">
+        </main>
+    <footer>
+        <p style="color: white;">© 2024 By Sergi Solís</p>
+    </footer>
+    <script>
+        function executeActions() {
+            // Cambiar el contenido del header
+            document.getElementById("titulo").textContent = "Pista";
+
+            // Mostrar la imagen
+            const imagen = document.getElementById("image");
+            imagen.style.display = "block";
+           
+            // Cambiar el texto en el main
+            document.getElementById("texto_0").innerHTML = "<em>El culpable sembla pelut i miau, <br> la Macarrona ha fet un bon sarau.<br> Corre a la seva casa, mira què ha deixat,<br> o potser és un drama que algú s’ha inventat.</em>";
+            
+            // Cambiar el texto en el main
+            document.getElementById("texto_1").textContent = " ";
+    
+            // Reproducir la música
+            const audio = document.getElementById("myAudio");
+            audio.play();
+
+            // Ocultar el botón
+            document.getElementById("Playbutton").style.display = "none";
+
+            // Mostrar el texto adicional
+            const additionalText = document.getElementById("additionalText");
+            additionalText.style.display = "block";
+        }
+    </script>
+</body>
+</html>
