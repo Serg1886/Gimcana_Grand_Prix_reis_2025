@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Prem per desblocar el missatge</h1>
+    </header>
+    <main>
+        <p id="texto_0"> 
+        <p id="texto_1"> </p></p></p>
+        <button id="Playbutton" onclick="executeActions()">Missatge</button>
+        <!-- Agregar botón para reproducir música -->
+        <audio id="myAudio">
+            <source src="./The Patriot.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <img id="image" src="1879S_Morgan_Dollar_NGC_MS67plus_Obvers.png" alt="Imageaftermusic" style="display: none; width: 500px; height: auto;">
+        </main>
+    <footer>
+        <p style="color: white;">© 2024 By Sergi Solís</p>
+    </footer>
+    <script>
+        function executeActions() {
+            // Cambiar el contenido del header
+            document.getElementById("titulo").textContent = "Pista";
+
+            // Mostrar la imagen
+            const imagen = document.getElementById("image");
+            imagen.style.display = "block";
+           
+            // Cambiar el texto en el main
+            document.getElementById("texto_0").innerHTML = "<em>Tretze pistes unides a un mateix destí,<br>son tretze les que van signar un nou camí.<br>Les notes sonen, cada una amb un crit,<br>al segle XVIII ho van deixar escrit.<br><br>La flama de la llibertat puja al cel alt,<br>però sota l’espurna, el foc crema: cruel i fatal.<br>El poble es va aixecar, però la llibertat és selectiva,<br>amb una declaració signada però no ajuda a la vida.</em>";
+            
+            // Cambiar el texto en el main
+            document.getElementById("texto_1").textContent = " ";
+    
+            // Reproducir la música
+            const audio = document.getElementById("myAudio");
+            audio.play();
+
+            // Ocultar el botón
+            document.getElementById("Playbutton").style.display = "none";
+
+            // Mostrar el texto adicional
+            const additionalText = document.getElementById("additionalText");
+            additionalText.style.display = "block";
+        }
+    </script>
+</body>
+</html>
