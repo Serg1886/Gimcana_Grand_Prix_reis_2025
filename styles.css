@@ -36,7 +36,7 @@ ul, li {
 button {
     font-size: 36px; /* Tamaño de fuente grande */
     padding: 40px 60px; /* Aumento del tamaño del botón */
-    background-color: #00B3FB; /* Color de fondo verde */
+    background-color: #0B9AE7; /* Color de fondo verde */
     color: white; /* Color del texto */
     border: none; /* Sin bordes */
     border-radius: 15px; /* Bordes redondeados */
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* Cambia el color de fondo cuando el mouse pasa sobre el botón */
+    background-color: #36B9FF; /* Cambia el color de fondo cuando el mouse pasa sobre el botón */
 }
 
 img {
@@ -76,7 +76,7 @@ img {
 }
 
 footer {
-    background-color: #07A300;
+    background-color: #0068B9;
     padding: 8px;
     position: fixed;
     bottom: 0;
