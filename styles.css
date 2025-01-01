@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #0CC4FF;
+    background-color: #009CCE;
     color: white;
     padding: 15px;
 }
@@ -76,7 +76,7 @@ img {
 }
 
 footer {
-    background-color: #00ACC1;
+    background-color: #0083A3;
     padding: 8px;
     position: fixed;
     bottom: 0;
