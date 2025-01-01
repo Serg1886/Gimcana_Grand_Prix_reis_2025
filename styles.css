@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #DCE9F5;
+    background-color: #BBEAFB;
     color: #333;
     text-align: center;
 }
 
 header {
-    background-color: #6050CE;
+    background-color: #0CC4FF;
     color: white;
     padding: 15px;
 }
@@ -36,7 +36,7 @@ ul, li {
 button {
     font-size: 36px; /* Tamaño de fuente grande */
     padding: 40px 60px; /* Aumento del tamaño del botón */
-    background-color: #4CAF50; /* Color de fondo verde */
+    background-color: #00B3FB; /* Color de fondo verde */
     color: white; /* Color del texto */
     border: none; /* Sin bordes */
     border-radius: 15px; /* Bordes redondeados */
@@ -76,7 +76,7 @@ img {
 }
 
 footer {
-    background-color: #47405f;
+    background-color: #00ACC1;
     padding: 8px;
     position: fixed;
     bottom: 0;
